@@ -15,11 +15,12 @@ zcPOL = calculePolar(zcRET(1), zcRET(2))
 
 
 
-totalZARET = emSerie(zlRET, zaRET);
+totalZARET = emSerie(zlRET, zaRET)
 
-totalZAPOL = calculePolar(totalZARET(1), totalZARET(2));
+ZA
 
-admZA = calculeAdmitancia(totalZAPOL(1), totalZAPOL(2))
+
+
 
 
 

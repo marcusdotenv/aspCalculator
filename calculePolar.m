@@ -1,8 +1,8 @@
-function calculePolar(real, img)
+function result= calculePolar(real, img)
 
-   modulo = sqrt(real*real+img*img)
-   fase = atan(img/real)
+   modulo = sqrt(real*real+img*img);
+   fase = atan(img/real)*180/pi;
    
-   return [modulo, fase]
    
+   result = [modulo, fase];
 end

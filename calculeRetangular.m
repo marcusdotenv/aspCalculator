@@ -1,7 +1,11 @@
-function [real, img] = calculeRetangular(modulo, fase)
+function result = calculeRetangular(modulo, fase)
 
-real = modulo*cos(fase)
+fase_rad = fase*pi/180;
 
-img = modulo*sin(fase)
+real = modulo*cos(fase_rad);
 
+img = modulo*sin(fase_rad);
+
+
+result = [real, img];
 end
