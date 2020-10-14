@@ -27,7 +27,9 @@ admZB = calculeAdmitancia(totalZBPOL(1), totalZBPOL(2));
 admZC = calculeAdmitancia(totalZCPOL(1), totalZCPOL(2));
  
 
-var = calcularTensoes("abc", 380, 0)
+var = calcularTensoes("abc", 380, 0);
 
+
+calculeVNN(var, admZA, admZB, admZC)
 
 end
