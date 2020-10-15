@@ -9,8 +9,6 @@ function resultado = calcularTensoes(selectFlagSequencia, tensao, defasagemAB)
         vca = [tensao(1), tensao(2)-120];
     end
 
-    disp(vab)
-
     phaseVab = vab(2)-30+defasagemAB;
     phaseVbc = vbc(2)-30+defasagemAB;
     phaseVca = vca(2)-30+defasagemAB;

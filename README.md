@@ -73,8 +73,12 @@ In suite, you can find methods of:
 #### 5. opereRetangular(selectFlag, retangularNumber1, retangularNumber2).
   - parameters:
   selectFlag: choose if you wanna add or subtract the rectangular numbers. Use **"sum"** or **""sub""**.
-  rectangularNumber1: an vector with real and imaginary parts of a number. Like `retangularNumber1 = [realPart1, imaginaryPart1]`.
-  rectangularNumber2: an vector with real and imaginary parts of a number. Like `retangularNumber2 = [realPart2, imaginaryPart2]`.
+  rectangularNumber1: an vector with real and imaginary parts of a number. Like:
+  
+  `retangularNumber1 = [realPart1, imaginaryPart1]`.
+  rectangularNumber2: an vector with real and imaginary parts of a number. Like:
+  
+  `retangularNumber2 = [realPart2, imaginaryPart2]`.
 
   - return:
   result: the sum or subtract of the numbers. 
@@ -88,15 +92,41 @@ In suite, you can find methods of:
   - return:
   result: the sum or subtract of the numbers. 
 
+#### 7. calculeConjulgado(polarNumber)
+  - parameters:
+  polarNumber: an polar number.
 
-#### Calculation Methods.
-
-#### 1. emSerie(retangularNumber1, retangularNumber2).
-   - parameters:
-   retangularNumber1: an vector containing real and imaginary part of number;
-   retangularNumber2: an vector containing real and imaginary part of number;
-   
   - return:
-  result: an vector with 2 numbers. The sum of the real and imaginary parts.
-`rectangularNumberResultant = [real, imaginary]`
+  result: Return an array of 2 positions, same module, inverted phase. 
+
+####  Calculation Methods.
+
+#### 1.calculeImpedanciaEstrela(impedanceRectangular).
+  - parameters:
+  impedanceRectangular: impedance(in rectangular form) of an triangule load. 
+  
+  - return:
+  result: The new impedance of the conversion. 
+  **Hint:** use this function just one time if the three load impedances are the same. But, if you have three differents load impedances, use this function for each one. 
+
+#### 2.calculePotenciaTrifasica(monofasicPower).
+  - parameters:
+  impedanceRectangular: calculated power(in polar form) using the monophasic model. 
+  
+  - return:
+  result: return an array with 3 positions. 
+  `triphasePower = [apparentPower, activePower, reativePower]`
+
+  #### 3.calcularTensoes(selectFlagSequency, voltage, phaseAB).
+  - parameters:
+  selectFlagSequency: indicates the sequency of phases. Use strings **"abc"** or **"acb"**.
+  voltage: the biggest voltage value in the question.
+  phaseAB: an possible shift phase of the question.
+  
+  - return:
+  result: an array of 6 positions containing: 
+  `voltage = [vanModule vanPhase vbnModule vbnPhase vcnModule vcnPhase]`
+
+  
+
 

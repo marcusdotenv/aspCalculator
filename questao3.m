@@ -33,9 +33,8 @@ function [] = questao3()
 
   disp("Item C");
 
-  correnteAConj = calculeConjugado(correnteLinhaA);
+  correnteAConj = calculeConjulgado(correnteLinhaA);
   potenciaMonofasica = operePolar("mult", tensaoFaseA, correnteAConj);
-
   potenciaTrifasica = calculePotenciaTrifasica(potenciaMonofasica)
 
 
