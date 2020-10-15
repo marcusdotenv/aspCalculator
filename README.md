@@ -27,9 +27,9 @@ In suite, you can find methods of:
 - Conversion: Change numbers between units or forms. 
 - Full calculation: Calculate anything. 
 
-**IMPORTANT: IS NOT NECESSARY TO USE THE IMAGINARY NUMBER I (OR J). JUST PASS, LIKE A PATTERN, COMPLEXY NUMBERS IN A VECTOR LIKE THE EXAMPLE**
+**IMPORTANT: IS NOT NECESSARY TO USE THE IMAGINARY NUMBER I (OR J). JUST PASS, LIKE A PATTERN, COMPLEXY NUMBERS IN A VECTOR LIKE EXAMPLE**
 
-                                   `ImpedanceInput = [realPart, imaginaryPart]`
+`ImpedanceInput = [realPart, imaginaryPart]`
 
 #### Conversion methods.
 
@@ -61,7 +61,7 @@ In suite, you can find methods of:
 `admitance = [module, phase]`
 
 
-#### Calculation Mmethods.
+#### Calculation Methods.
 
 #### 1. emSerie(retangularNumber1, retangularNumber2).
    - parameters:
