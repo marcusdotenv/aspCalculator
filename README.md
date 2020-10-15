@@ -60,6 +60,34 @@ In suite, you can find methods of:
   result: an vector with 2 numbers. The module of admitance and the phase.
 `admitance = [module, phase]`
 
+#### 4. calculeReatancia(selectFlag, valueToConvert, frequency).
+  - parameters:
+  selectFlag: this flag choose if you wanna calculate a Capacite or an Indutive reatancy. Use **"ind"** or **"cap"**.
+  valueToConvert: value of Capacitance (in Farads) or Indutance (in Henrys). Hint: try to every use the cientific notation. For exemple, 100mH can be "100E-3". Or 20uF can be "20E-6".
+  frequency: value in Hertz to the source. 
+
+  - return:
+  result: an value of reatancy corresponding the inputs. 
+  **IMPORTANT:** Remember, the capacitive reatancy has an negative value. 
+
+#### 5. opereRetangular(selectFlag, retangularNumber1, retangularNumber2).
+  - parameters:
+  selectFlag: choose if you wanna add or subtract the rectangular numbers. Use **"sum"** or **""sub""**.
+  rectangularNumber1: an vector with real and imaginary parts of a number. Like `retangularNumber1 = [realPart1, imaginaryPart1]`.
+  rectangularNumber2: an vector with real and imaginary parts of a number. Like `retangularNumber2 = [realPart2, imaginaryPart2]`.
+
+  - return:
+  result: the sum or subtract of the numbers. 
+
+#### 6. operePolar(selectFlag, polarNumber1, polarNumber2).
+  - parameters:
+  selectFlag: choose if you wanna multiply or divide the rectangular numbers. Use **"mult"** or **""div""**.
+  rectangularNumber1: an vector with module and phase parts of a number. Like `polarNumber1 = [module, phase]`.
+  rectangularNumber2: an vector with module and phase parts of a number. Like `polarNumber2 = [module, phase]`.
+
+  - return:
+  result: the sum or subtract of the numbers. 
+
 
 #### Calculation Methods.
 
