@@ -8,7 +8,7 @@ function result = opereRetangular(selectFlag, retangularNumber1, retangularNumbe
   elseif selectFlag == "sub"
     realPart = retangularNumber1(1) - retangularNumber2(1);
     imgPart = retangularNumber1(2) - retangularNumber2(2);
-    result = [realPart, imgPart]
+    result = [realPart, imgPart];
   end 
 
   
