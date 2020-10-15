@@ -1,6 +1,6 @@
 function [] = main()
 
-% /usr/local/MATLAB/R2017a/bin/matlab -nodisplay -nosplash -nodesktop;
+% /usr/local/MATLAB/R2017a/bin/matlab -nodisplay -nosplash -nodesktop open matlab in terminal;
 % apenas um teste para as funções que já estão implementadas
 zlRET = [2, 10];
 zlPOL = calculePolar(zlRET(1), zlRET(2));
