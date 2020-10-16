@@ -33,19 +33,19 @@ In suite, you can find methods of:
 
 #### Conversion methods.
 
-#### 1. calculePolar(real, img). Convert a number in the rectangular for to polar form. 
+#### 1. calculePolar(rectangularNumber). Convert a number in the rectangular for to polar form. 
   - parameters:
-  real: real part of a complex number;
-   img: imaginary part of a complex number (without i or j);
+  rectangularNumber: an array with 2 positions that corresponding a number in rectangular form. 
+   `rectangularNumber = [realPart, imgPart]` 
    
   - return:
   result: an vector with 2 numbers. The first one is the module and the second is the phase(in degrees) of the polar number.
  `polarNumber = [module, phase]`
   
-#### 2. calculeRetangular(module, phase)
+#### 2. calculeRetangular(polarNumber)
    - parameters:
-   module: module of a polar number;
-   phase: phase(in degrees) of the polar number;
+    polarNumber: an array with 2 positions that corresponding a number in rectangular form. 
+   `polarNumber = [module, phase]` 
    
   - return:
   result: an vector with 2 numbers. The first one is the real part and the second is the imaginary part of the rectangular number.
